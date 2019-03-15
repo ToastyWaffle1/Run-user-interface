@@ -6,11 +6,6 @@ import os
 import subprocess
 import webbrowser
 class Application(Frame):
-    def Realcancer(self):
-        print('4chan')
-        url = 'http://www.4chan.org'
-        webbrowser.open_new_tab(url + 'doc')
-        webbrowser.open_new(url)
     def Yeet(self):
         print('Cancer')
         url = 'file:///Users/oconlon23/Desktop/Server/html/Projecto.html'
@@ -94,12 +89,6 @@ class Application(Frame):
         self.reddit["command"] = self.Yeet
 
         self.reddit.pack({"side": "left"})
-
-        self.fourchan = Button(self)
-        self.fourchan["text"] = "Open Rediit"
-        self.fourchan["command"] = self.Realcancer
-
-        self.fourchan.pack({"side": "left"})
 
     def __init__(self, master=None):
         Frame.__init__(self, master)
